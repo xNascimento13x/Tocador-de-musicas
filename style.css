@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    position: relative;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,#6e0000,#8d0000);
+}
+.main button{
+    padding: 10px 12px;
+    margin: 0 10px;
+}
+.main #logo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 25px;
+    color:#ccc;
+}
+.mian #logo i{
+    margin-right: 15px;
+}
+.right , .left{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left img{
+    height: 300px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px 12px rgba(red, green, blue, alpha);
+}
+input[type="range"]{
+    -webkit-appearance: none;
+    width: 50%;
+    outline: none;
+    height: 2px;
+    margin: 0 15px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-apparance: none;
+    height: 20px;
+    width: 20px;
+    background: white ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.right input[type="range"]{
+    width: 40%;
+}
+.left .volume{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.left .volume p{
+    font-size: 15px;
+}
+.lefet .volume i{
+    cursor: pointer;
+    padding: 8px 12px;
+    background: white;
+}
+.left .volume i:hover{
+    background: rgba(245, 245,245, 0.1);
+}
+.volume #volume_show{
+    padding: 0px 12px;
+    margin: 0 5px 0 0;
+    background: rgba(245, 245,245, 0.1);
+}
+.right .middle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.right.middle button{
+    border: none;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    background: white;
+}

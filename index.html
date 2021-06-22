@@ -33,7 +33,11 @@
         <button onabort="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
     </div>       
         
-        </div>
+        <div class="duration">
+        <input type="range" min="0" max="100" value="0" id="duration_slider" on change="change_duration()">
     </div>
+    <button id="auto" onclick="autoplay_switch()">auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+    </div>
+</div>
 </body>
 </html>
